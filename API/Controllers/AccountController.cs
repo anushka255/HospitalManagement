@@ -9,27 +9,27 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
-public class AccountController : BaseApiController
+public class AccountController:BaseApiController
 {
     private readonly DataContext _context;
-    private readonly ITokenService _tokenService;
+    private ITokenService _tokenService;
 
     public AccountController(DataContext context, ITokenService tokenService)
     {
         _tokenService = tokenService;
-        _context = context;
+        _context = context; 
     }
 
     [HttpPost("register")]
-    public async Task<ActionResult<UserDTO>> Register(RegisterDTO registerDto)
+    public async Task<ActionResult<UserDTO>> Register(RegisterDTO  registerDto)
     {
         //Check to see if username already exists
 
         if (await UserExists(registerDto.Username))
             return BadRequest("Username is Taken");
-
+        
         using var hmac = new HMACSHA512();
-        var user = new AppUser
+        var user = new AppUser()
         {
             UserName = registerDto.Username.ToLower(),
             PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
@@ -50,8 +50,8 @@ public class AccountController : BaseApiController
     {
         return await _context.Users.AnyAsync(x => x.UserName == username.ToLower());
     }
-
-
+    
+    
     //END point for login
     [HttpPost("login")]
     public async Task<ActionResult<UserDTO>> Login(LoginDTO loginDto)
@@ -64,9 +64,10 @@ public class AccountController : BaseApiController
         using var hmac = new HMACSHA512(user.PasswordSalt);
         var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
 
-        for (var i = 0; i < computedHash.Length; i++)
-            if (computedHash[i] != user.PasswordHash[i])
-                return Unauthorized("Invalid Password");
+        for (int i = 0; i < computedHash.Length; i++)
+        {
+            if (computedHash[i] != user.PasswordHash[i]) return Unauthorized("Invalid Password");
+        }
 
         //Return user object if login credentials match
         return new UserDTO
@@ -75,4 +76,5 @@ public class AccountController : BaseApiController
             Token = _tokenService.CreateToken(user)
         };
     }
+
 }
