@@ -1,0 +1,68 @@
+<div *ngIf="member" class="row">
+    <div class="col-4">
+      <div class="card">
+        <img src="{{member.photoUrl}}" alt="../../assets/3899618.png" class="card-img-top img-thumbnail">
+        <div class="card-body">
+          <div>
+            <strong>Name</strong>
+            <p>{{member.lastName}}, {{member.firstName}}</p>
+          </div>
+  
+          <div>
+            <strong>Location</strong>
+            <p>{{member.city}}, {{member.country}}</p>
+          </div>
+  
+          <div>
+            <strong>{{member.userType}}</strong>
+          </div>
+  
+          <div class="card-footer">
+            <div class="btn-group">
+              <button class="btn btn-primary">Message</button>
+              <a href="mailto: {{member.email}}">
+                <button class="btn btn-success">Email</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <tabset class="member-tabset" #memberTabs>
+        <tab heading='About {{member.firstName}}'>
+          <h4><strong>{{member.userType}}</strong></h4>
+  
+          <br>
+          <strong>Gender: </strong>
+          {{member.gender}}
+          <br>
+          <strong>Phone Number: </strong>
+          {{member.phoneNumber}}
+          <br>
+          <strong>Email: </strong>
+          {{member.email}}
+  
+        </tab>
+        <tab heading="Photos">
+  <!--        <div gallerize="Photos" *ngFor="photo on images">-->
+            <h4>Gallery:</h4>
+  
+  <!--           <img *ngIf="true" class = "insurance" src="{{photo.src}}" />-->
+            <gallery [items]="images" thumbPosition="left"></gallery>
+  
+  <!--        </div>-->
+        </tab>
+        <tab heading="Message">
+          <!--        <div gallerize="Photos" *ngFor="photo on images">-->
+                    <h4>Gallery:</h4>
+          
+          <!--           <img *ngIf="true" class = "insurance" src="{{photo.src}}" />-->
+                    <gallery [items]="images" thumbPosition="left"></gallery>
+          
+          <!--        </div>-->
+                </tab>
+      </tabset>
+    </div>
+  </div>
+  

@@ -1,0 +1,170 @@
+[
+  {
+    "_id": "632e756acb17fb5ec63d7b89",
+    "UserName": "Donna",
+    "DateOfBirth": "1985-11-13",
+    "UserType": "Patient",
+    "Email": "donnahumphrey@geofarm.com",
+    "Gender": "female",
+    "PhoneNumber": "+1 (874) 453-2956",
+    "City": "Fillmore",
+    "Country": "Honduras",
+    "KnownAs": "Donna",
+    "FirstName": "Gutierrez",
+    "LastName": "Cooke",
+    "Ssn": "7975186043",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/38.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "_id": "632e75e4ef8d594cb3bb75d0",
+    "UserName": "Marjorie",
+    "DateOfBirth": "1997-03-28",
+    "UserType": "Receptionist",
+    "Email": "marjoriecooke@geofarm.com",
+    "Gender": "female",
+    "PhoneNumber": "+1 (809) 481-2266",
+    "City": "Imperial",
+    "Country": "Jordan",
+    "KnownAs": "Marjorie",
+    "FirstName": "Sanders",
+    "LastName": "Herring",
+    "Ssn": "2377580121",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/74.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "_id": "632e760a7b35fd96f38c5e1e",
+    "UserName": "Mcpherson",
+    "DateOfBirth": "1976-03-30",
+    "UserType": "Accounts",
+    "Email": "mcphersonherring@geofarm.com",
+    "Gender": "male",
+    "PhoneNumber": "+1 (919) 597-3873",
+    "City": "Aberdeen",
+    "Country": "Aruba",
+    "KnownAs": "Mcpherson",
+    "FirstName": "Polly",
+    "LastName": "Humphrey",
+    "Ssn": "6471268148",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/82.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "_id": "632e762500c8f9b6dd70aceb",
+    "UserName": "Snow",
+    "DateOfBirth": "1990-10-24",
+    "UserType": "Clinician",
+    "Email": "snowhumphrey@geofarm.com",
+    "Gender": "male",
+    "PhoneNumber": "+1 (852) 502-3405",
+    "City": "Grantville",
+    "Country": "Monaco",
+    "KnownAs": "Snow",
+    "FirstName": "Charmaine",
+    "LastName": "Allen",
+    "Ssn": "4263292174",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/34.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "_id": "632e763e15da7a751e224f97",
+    "UserName": "Delgado",
+    "DateOfBirth": "1960-10-28",
+    "UserType": "Physician",
+    "Email": "delgadoallen@geofarm.com",
+    "Gender": "male",
+    "PhoneNumber": "+1 (828) 575-2368",
+    "City": "Cascades",
+    "Country": "Senegal",
+    "KnownAs": "Delgado",
+    "FirstName": "Jeri",
+    "LastName": "Garcia",
+    "Ssn": "3468454325",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/4.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "_id": "632e766a411d5db01b94d3f3",
+    "UserName": "Richie",
+    "DateOfBirth": "1989-11-16",
+    "UserType": "Administration",
+    "Email": "richmondparks@geofarm.com",
+    "Gender": "female",
+    "PhoneNumber": "+1 (953) 556-3515",
+    "City": "Rodanthe",
+    "Country": "Liberia",
+    "KnownAs": "Rich",
+    "FirstName": "Richie",
+    "LastName": "Mosley",
+    "Ssn": "8081173992",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/58.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "_id": "632e76888adeffd0fe85337a",
+    "UserName": "Carey",
+    "DateOfBirth": "1967-10-22",
+    "UserType": "Patient",
+    "Email": "careymosley@geofarm.com",
+    "Gender": "female",
+    "PhoneNumber": "+1 (813) 492-3491",
+    "City": "Hegins",
+    "Country": "Croatia (Hrvatska)",
+    "KnownAs": "Carey",
+    "FirstName": "Hill",
+    "LastName": "Matthews",
+    "Ssn": "530977622",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/96.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "_id": "632e7696923bf7308d9be7d2",
+    "UserName": "Magdalena",
+    "DateOfBirth": "1999-04-18",
+    "UserType": "Patient",
+    "Email": "magdalenaherring@geofarm.com",
+    "Gender": "female",
+    "PhoneNumber": "+1 (857) 402-2761",
+    "City": "Echo",
+    "Country": "Guinea",
+    "KnownAs": "Magdalena",
+    "FirstName": "Brandi",
+    "LastName": "Haynes",
+    "Ssn": "5105067296",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/14.jpg",
+        "IsMain": true
+      }
+    ]
+  }
+]

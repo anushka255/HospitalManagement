@@ -1,0 +1,107 @@
+<div class="text-center mt-3">
+  <h2>{{pagination?.totalItems}} found </h2>
+</div>
+
+<div class="container mt-3">
+  <form class="form-inline mb-3" (ngSubmit) ="loadMembers()" autocomplete="off">
+    <div class="form-group">
+      <label> Age Range: </label>
+      <input type="number" class="form-control ml-1" style="width: 70px;" name="minAge"
+             [(ngModel)]="userParams.minAge">
+      <label> to </label>
+      <input type="number" class="form-control ml-1" style="width: 70px;" name="maxAge"
+             [(ngModel)]="userParams.maxAge">
+    </div>
+
+    <div class="form-group">
+      <label> User Type:</label>
+      <input type ="text" class="form-control ml-1" style="width: 70px;" name="userType" [value]="'Patient'" disabled>
+      <!-- <select  name="userType" style="width: 130px" class="form-control ml-1" [(ngModel)]="userParams.userType">
+        <option  *ngFor="let type of userTypeList" [value]="Patient">
+          {{type.display}}
+        </option>
+      </select> -->
+    </div>
+
+
+    <button class="btn btn-primary ml-1" type="submit"> Apply Filters </button>
+    <button (click)="resetFilters()" class="btn btn-info ml-1" type="button"> Reset Filters </button>
+
+    <div class="col">
+      <div class="btn-group float-right">
+        <button
+          type="button"
+          class="btn btn-primary" name='orderBy'
+          (click)="loadMembers()"
+          btnRadio='lastActive'
+          ngModel="userParams.orderBy"> Last Active</button>
+      </div>
+
+      <div class="btn-group float-right">
+        <button
+          type="button"
+          class="btn btn-primary" name='orderBy'
+          (click)="loadMembers()"
+          btnRadio='dateOfBirth'
+          ngModel="userParams.orderBy"> Age</button>
+      </div>
+    </div>
+
+  </form>
+</div>
+<div class="container mt-3">
+  <h2>Striped Rows</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p>
+  <table class="table table-striped">
+    <thead style="background-color: #56565e;
+    color:#ffffff">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Position</th>
+    </tr>
+    </thead>
+
+
+
+
+    <tbody  *ngFor="let member of members">
+    <tr class="info" routerLink='/members/{{member.username}}'>
+      <td>{{member.firstName}}</td>
+      <td>{{member.lastName}}</td>
+      <td>{{member.age}}</td>
+      <td>{{member.email}}</td>
+      <td>{{member.city}}, {{member.country}}</td>
+      <td>{{member.userType}}</td>
+    </tr>
+    </tbody>
+
+
+  </table>
+</div>
+<div class="row">
+  <div *ngFor="let member of members" class = "col-3">
+    <div class="card bg-secondary text-white" class ="name">
+      <div class ="card-body"> <i class ="fa fa-user mr-2"></i> {{member.lastName}}, {{member.firstName}}</div> </div>
+    <app-members-card [member] = "member"></app-members-card>
+  </div>
+</div>
+
+
+<div class="d-flex justify-content-center" *ngIf="pagination">
+  <pagination
+    [boundaryLinks]="true"
+    [totalItems]="pagination.totalItems"
+    [itemsPerPage]="pagination.itemsPerPage"
+    [(ngModel)]="pagination.currentPage"
+    (pageChanged)="pageChanged($event)"
+    [maxSize]="10"
+    previousText="&lsaquo;"
+    nextText="&rsaquo;"
+    firstText="&laquo;"
+    lastText="&raquo;">
+  </pagination>
+

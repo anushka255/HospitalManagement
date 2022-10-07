@@ -1,0 +1,164 @@
+<div *ngIf="member" class="row">
+  <div class="col-4">
+    <div class="card">
+      <img *ngIf="!member.photoUrl" src="../../assets/3899618.png" class="card-img-top img-thumbnail">
+      <img src ={{member.photoUrl}} class="card-img-top img-thumbnail">
+      <div class="card-body">
+        <div>
+          <strong>Name</strong>
+          <p>{{member.lastName}}, {{member.firstName}}</p>
+        </div>
+
+        <div>
+          <strong>Location</strong>
+          <p>{{member.city}}, {{member.country}}</p>
+        </div>
+
+        <div>
+          <strong>{{member.userType}}</strong>
+        </div>
+
+        <div class="card-footer">
+          <div class="btn-group">
+            <button class="btn btn-primary">Message</button>
+            <a href="mailto: {{member.email}}">
+              <button class="btn btn-success">Email</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <tabset class="member-tabset" #memberTabs>
+      <tab heading='About {{member.id}}'>
+        <h4><strong>{{member.userType}}</strong></h4>
+
+        <br>
+        <strong>Gender: </strong>
+        {{member.gender}}
+        <br>
+        <strong>Phone Number: </strong>
+        {{member.phoneNumber}}
+        <br>
+        <strong>Email: </strong>
+        {{member.email}}
+
+      </tab>
+      <tab heading='Triage'>
+        <h4>Triage</h4>
+        <strong>Triage Id: </strong>
+        {{triage.Id}}
+        <br>
+        <strong>Nurse's Id: </strong>
+        {{triage.nurseId}}
+        <br>
+        <strong>Blood Pressure: </strong>
+        {{triage.bloodPressure}}
+        <br>
+        <strong>Heart Beat: </strong>
+        {{triage.heatBeat}}
+        <br>
+        <strong>Sugar Level: </strong>
+        {{triage.sugarLevel}}
+        <br>
+        <strong>Height: </strong>
+        {{triage.height}}
+        <br>
+        <strong>Weight: </strong>
+        {{triage.weight}}
+        <br>
+        <strong>Time of Examination: </strong>
+        {{triage.time}}
+        <br>
+        <strong>Bill: </strong>
+        {{triage.bill}}
+        <br>
+
+      </tab>
+      <tab heading='Billing'>
+        <h4>Billing</h4>
+        <strong>Bill Id: </strong>
+        {{billing.Id}}
+        <br>
+        <strong>Doctor's Charge: </strong>
+        {{billing.doctorCharge}}
+        <br>
+        <strong>Medicine Charge: </strong>
+        {{billing.medicineCharge}}
+        <br>
+        <strong>Room Charge: </strong>
+        {{billing.roomCharge}}
+        <br>
+        <strong>Nursing Charge: </strong>
+        {{billing.nursingCharge}}
+        <br>
+        <strong>Lab Charge: </strong>
+        {{billing.labCharge}}
+        <br>
+        <strong>Total Charge: </strong>
+        {{billing.totalCharge}}
+        <br>
+      </tab>
+      <tab heading='Test'>
+        <h4>Test</h4>
+        <strong>Test Id: </strong>
+        {{test.Id}}
+        <br>
+        <strong>Test Description: </strong>
+        {{test.testDescription}}
+        <br>
+        <strong>Lab Scientist's Id: </strong>
+        {{test.labScientistId}}
+        <br>
+        <strong>Doctor's Id: </strong>
+        {{test.doctorId}}
+        <br>
+        <strong>Prescription Time: </strong>
+        {{test.prescriptionTime}}
+        <br>
+        <strong>Test Time: </strong>
+        {{test.testTime}}
+        <br>
+        <strong>Test Result: </strong>
+        {{test.testResult}}
+        <br>
+        <strong>Bill: </strong>
+        {{test.bill}}
+        <br>
+        <strong>Comment: </strong>
+        {{test.comment}}
+      </tab>
+      <tab heading='Medication'>
+        <h4>Medication</h4>
+        <strong>Medication Name: </strong>
+        {{medication.name}}
+        <br>
+        <strong>Medication Price: </strong>
+        {{medication.price}}
+        <br>
+        <strong>Dosage: </strong>
+        {{medication.dosage}}
+        <br>
+        <strong>Doctor's Id: </strong>
+        {{medication.doctorsId}}
+        <br>
+        <strong>Pharmacist's Id: </strong>
+        {{medication.pharmacistId}}
+        <br>
+        <strong>Recommendation: </strong>
+        {{medication.recommendation}}
+        <br>
+      </tab>
+      <tab heading="Insurance Card">
+<!--        <div gallerize="Photos" *ngFor="photo on images">-->
+          <h4>User Insurance Card:</h4>
+
+<!--           <img *ngIf="true" class = "insurance" src="{{photo.src}}" />-->
+          <gallery [items]="images" thumbPosition="left"></gallery>
+
+<!--        </div>-->
+      </tab>
+    </tabset>
+  </div>
+</div>

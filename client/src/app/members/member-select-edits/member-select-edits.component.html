@@ -1,0 +1,66 @@
+<div *ngIf="member"class="row">
+    <div class="col-4">
+      <h1>Your Profile <button [disabled]="!editForm.dirty" form="editForm" type="submit" class="btn btn-success " >Save Changes</button>
+      </h1>
+    </div>
+    <div class="col-6">
+      <div class="alert alert-info" *ngIf="editForm.dirty">
+        <p> Any unsaved changes will be lost. </p>
+      </div>
+    </div>
+  
+    <div class="col-4">
+      <div class="card">
+        <img src="{{member.photoUrl}}" alt="" class="card-img-top img-thumbnail">
+        <div class="card-body">
+          <div>
+            <strong>Name</strong>
+            <p>{{member.lastName}}, {{member.firstName}}</p>
+          </div>
+  
+          <div>
+            <strong>Location</strong>
+            <p>{{member.city}}, {{member.country}}</p>
+          </div>
+  
+          <div>
+            <strong>{{member.userType}}</strong>
+          </div>
+  
+          <div class="card-footer">
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6">
+      <tabset class="member-tabset" #memberTabs>
+  
+        <tab heading='About {{member.firstName}}'>
+          <form #editForm="ngForm" id="editForm" (ngSubmit)="updateMember()">
+            <h4>Description</h4>
+            <textarea class="form-control" [(ngModel)]="member.city" name="introduction" rows="6"></textarea>
+          </form>
+        </tab>
+  
+  
+        <tab heading='Something'>
+          <form >
+            <h4>Description</h4>
+            <textarea class="form-control" [(ngModel)]="member.firstName" name="something" rows="6"></textarea>
+          </form>
+        </tab>
+  
+        <tab heading='Photos'>
+          <app-photo-editor [member]="member"> </app-photo-editor>
+        </tab>
+  
+        <tab heading='Messages' >
+          <form >
+          </form>
+        </tab>
+      </tabset>
+    </div>
+  </div>
+  

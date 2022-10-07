@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import{HttpClient} from '@angular/common/http';
 import { AccountService } from './_services/account.service';
 import { User } from './_models/user';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+;
 
 
 @Component({
@@ -23,6 +25,8 @@ export class AppComponent implements OnInit{
       this.setCurrentUser();
   }
 
+  //User that is currently active
+  //Retrieved from the local storage
   setCurrentUser()
   {
     const user: User = JSON.parse(localStorage.getItem('user'));

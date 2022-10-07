@@ -1,14 +1,17 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import {map, shareReplay} from 'rxjs/operators';
+import { User } from '../_models/user';
 import { ReplaySubject } from 'rxjs';
-import {map} from 'rxjs/operators';
-import {User} from '../_models/user';
+import { environment } from 'src/environments/environment';
+// import { PresenceService } from './presence.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AccountService {
-  baseUrl = 'https://localhost:5001/api/';
+  baseUrl = environment.apiUrl;
   private currentUserSource = new ReplaySubject<User> (1);
   currentUser$ = this.currentUserSource.asObservable();
 
@@ -25,8 +28,8 @@ export class AccountService {
           localStorage.setItem('user', JSON.stringify(user));
           this.currentUserSource.next(user);
         }
-      })
-    )
+      }, shareReplay(1))
+    );
   }
 
 

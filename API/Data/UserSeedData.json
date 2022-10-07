@@ -1,0 +1,867 @@
+[
+  {
+    "UserName": "Jewell",
+    "DateOfBirth": "1984-07-14",
+    "UserType": "Patient",
+    "Email": "jewellatkins@vortexaco.com",
+    "Gender": "female",
+    "Phone": "+1 (818) 507-3155",
+    "City": "Wadsworth",
+    "Country": "Equatorial Guinea",
+    "FirstName": "Haley",
+    "LastName": "King",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/90.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 1,
+        "BillId": 1,
+        "DoctorCharge": 191.4037,
+        "MedicineCharge": 590.8504,
+        "RoomCharge": 896.4722,
+        "OperationCharge": 122.7368,
+        "NursingCharge": 16.6999,
+        "LabCharge": 381.7459,
+        "TotalCharge": 179.1061,
+        "Comment": "United Health"
+      }
+    ],
+    "Test": [
+      {
+        "Id": 1,
+        "TestId": 1,
+        "TestDescription": "Lipid Panel",
+        "LabScientistId": 1,
+        "DoctorId": 1,
+        "PrescriptionTime": "2020-01-24",
+        "TestTime": "2020-02-17"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 1,
+        "TestId": 1,
+        "NurseId": 1,
+        "BloodPressure": "135/85",
+        "HeartBeat": "730.0702",
+        "SugarLevel": "850.977",
+        "Height": "413.9477",
+        "Weight": " 116.5349",
+        "Time": "2020-01-11"
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 1,
+        "Name": "Lisinopril",
+        "Price": 610.5106,
+        "Dosage": 665.5075,
+        "DoctorsId": 1,
+        "PharmacistId": 1,
+        "Recommendation": "q. daily"
+      }
+    ]
+  },
+  {
+    "UserName": "Claudine",
+    "DateOfBirth": "1974-12-12",
+    "UserType": "Patient",
+    "Email": "claudineking@vortexaco.com",
+    "Gender": "female",
+    "Phone": "+1 (991) 570-3066",
+    "City": "Fruitdale",
+    "Country": "Namibia",
+    "FirstName": "Maxine",
+    "LastName": "Baird",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/59.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 2,
+        "BillId": 2,
+        "DoctorCharge": 465.4928,
+        "MedicineCharge": 176.0442,
+        "RoomCharge": 453.2957,
+        "OperationCharge": 323.369,
+        "NursingCharge": 888.0517,
+        "LabCharge": 964.1915,
+        "TotalCharge": 907.3384,
+        "Comment": "Blue Cross Shield of Massachussetts"
+      }
+    ],
+    "Test": [
+      {
+        "Id": 2,
+        "TestId": 2,
+        "TestDescription": "Urinalysis",
+        "LabScientistId": 2,
+        "DoctorId": 2,
+        "PrescriptionTime": "2020-04-04",
+        "TestTime": "2019-07-17"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 2,
+        "TestId": 2,
+        "NurseId": 1,
+        "BloodPressure": "125/75",
+        "HeartBeat": "9.166",
+        "SugarLevel": "754.4748",
+        "Height": "741.9392",
+        "Weight": "335.8954",
+        "Time": "2019-10-07"
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 2,
+        "Name": "Amoxicilin",
+        "Price": 553.7575,
+        "Dosage": 61.6808,
+        "DoctorsId": 2,
+        "PharmacistId": 2,
+        "Recommendation": "b.i.d for 7 days"
+      }
+    ]
+  },
+  {
+    "UserName": "Sondra",
+    "DateOfBirth": "1992-11-03",
+    "UserType": "Patient",
+    "Email": "sondrabaird@vortexaco.com",
+    "Gender": "female",
+    "Phone": "+1 (993) 505-3401",
+    "City": "Carlton",
+    "Country": "Congo",
+    "FirstName": "Gaines",
+    "LastName": "Sanchez",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/51.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 3,
+        "BillId": 3,
+        "DoctorCharge": 417.6976,
+        "MedicineCharge": 768.1149,
+        "RoomCharge": 981.817,
+        "OperationCharge": 51.7146,
+        "NursingCharge": 208.1453,
+        "LabCharge": 169.9717,
+        "TotalCharge": 121.5843,
+        "Comment": "United Health Group"
+      }
+    ],
+    "Test": [
+      {
+        "Id": 3,
+        "TestId": 3,
+        "TestDescription": "Complete Blood Count",
+        "LabScientistId": 3,
+        "DoctorId": 3,
+        "PrescriptionTime": "2019-09-20",
+        "TestTime": "2019-06-16"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 3,
+        "TestId": 3,
+        "NurseId": 3,
+        "BloodPressure": "177/85",
+        "HeartBeat": "496.6245",
+        "SugarLevel": "343.5967",
+        "Height": "903.6703",
+        "Weight": "444.4822",
+        "Time": "2019-07-13"
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 3,
+        "Name": "Lisinopril",
+        "Price": 756.8872,
+        "Dosage": 899.8201,
+        "DoctorsId": 3,
+        "PharmacistId": 3,
+        "Recommendation": "q. day b.c"
+      }
+    ]
+  },
+  {
+    "UserName": "Tanya",
+    "DateOfBirth": "1967-07-03",
+    "UserType": "Patient",
+    "Email": "tanyasanchez@vortexaco.com",
+    "Gender": "female",
+    "Phone": "+1 (985) 442-2463",
+    "City": "Martinsville",
+    "Country": "Chile",
+    "FirstName": "Stephens",
+    "LastName": "James",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/89.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 4,
+        "BillId": 4,
+        "DoctorCharge": 211.3494,
+        "MedicineCharge": 791.6147,
+        "RoomCharge": 903.2066,
+        "OperationCharge": 865.1797,
+        "NursingCharge": 457.3686,
+        "LabCharge": 360.3773,
+        "TotalCharge": 798.293,
+        "Comment": "Blue Cross Shield of New Jersey"
+      }
+    ],
+    "Test": [
+      {
+        "Id": 4,
+        "TestId": 4,
+        "TestDescription": "Basic Metabolic Panel",
+        "LabScientistId": 4,
+        "DoctorId": 4,
+        "PrescriptionTime": "2020-02-17",
+        "TestTime": "2019-02-13"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 4,
+        "TestId": 4,
+        "NurseId": 4,
+        "BloodPressure": "132/67",
+        "HeartBeat": "180.6042",
+        "SugarLevel": "557.0288",
+        "Height": "546.8",
+        "Weight": "276.7272",
+        "Time": "2019-12-14"
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 4,
+        "Name": "Levothyroxine Sodium",
+        "Price": 683.5696,
+        "Dosage": 961.4847,
+        "DoctorsId": 4,
+        "PharmacistId": 4,
+        "Recommendation": "q. 12 hours everyday"
+      }
+    ]
+  },
+  {
+    "UserName": "Ila",
+    "DateOfBirth": "1986-04-08",
+    "UserType": "Patient",
+    "Email": "ilajames@vortexaco.com",
+    "Gender": "female",
+    "Phone": "+1 (909) 470-2342",
+    "City": "Harmon",
+    "Country": "Slovenia",
+    "FirstName": "Mona",
+    "LastName": "Mcclain",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/36.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 5,
+        "BillId": 5,
+        "DoctorCharge": 609.0633,
+        "MedicineCharge": 994.9308,
+        "RoomCharge": 456.8938,
+        "OperationCharge": 164.6205,
+        "NursingCharge": 88.1403,
+        "LabCharge": 490.9424,
+        "TotalCharge": 927.4084,
+        "Comment": "Aetna"
+      }
+    ],
+    "Test": [
+      {
+        "Id": 5,
+        "TestId": 5,
+        "TestDescription": "Hemoglobin A1C",
+        "LabScientistId": 5,
+        "DoctorId": 5,
+        "PrescriptionTime": "2020-05-12",
+        "TestTime": "2020-02-15"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 5,
+        "TestId": 5,
+        "NurseId": 5,
+        "BloodPressure": "145/90",
+        "HeartBeat": "555.3372",
+        "SugarLevel": "108.6074",
+        "Height": "299.8149",
+        "Weight": "295.3119",
+        "Time": "2020-06-05"
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 5,
+        "Name": "Losartan Potassium",
+        "Price": 456.9891,
+        "Dosage": 982.9923,
+        "DoctorsId": 5,
+        "PharmacistId": 5,
+        "Recommendation": "q. 8 hours everyday"
+      }
+    ]
+  },
+  {
+    "UserName": "Hudson",
+    "DateOfBirth": "1975-08-31",
+    "UserType": "Patient",
+    "Email": "hudsonnichols@plexia.com",
+    "Gender": "male",
+    "Phone": "+1 (865) 491-2806",
+    "City": "Harborton",
+    "Country": "Saint Kitts and Nevis",
+    "FirstName": "Shauna",
+    "LastName": "Glenn",
+    "Ssn": "<ReferenceError: Can't find variable: number>",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/30.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 6,
+        "BillId": 6,
+        "DoctorCharge": 842.3403,
+        "MedicineCharge": 534.9179,
+        "RoomCharge": 355.8042,
+        "OperationCharge": 845.0506,
+        "NursingCharge": 990.1233,
+        "LabCharge": 717.4358,
+        "TotalCharge": 700.2134,
+        "Comment": "Aetna",
+        "Bill": 335.2049
+      }
+    ],
+    "Test": [
+      {
+        "Id": 6,
+        "TestId": 6,
+        "TestDescription": "Prothrombin Time",
+        "LabScientistId": 6,
+        "DoctorId": 6,
+        "PrescriptionTime": "2019-09-12",
+        "TestTime": "2019-09-23"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 6,
+        "TestId": 6,
+        "NurseId": 6,
+        "BloodPressure": "149/86",
+        "HeartBeat": "655.6402",
+        "SugarLevel": "837.0959",
+        "Height": "826.834",
+        "Weight": "356.9554",
+        "Time": "2019-04-21",
+        "Bill": 55.55
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 6,
+        "Name": "Ondansetron",
+        "Price": 100.4956,
+        "Dosage": 821.7641,
+        "DoctorsId": 6,
+        "PharmacistId": 6,
+        "Recommendation": "p.r.n"
+      }
+    ]
+  },
+  {
+    "UserName": "Patel",
+    "DateOfBirth": "1981-05-09",
+    "UserType": "Patient",
+    "Email": "patelglenn@plexia.com",
+    "Gender": "male",
+    "Phone": "+1 (900) 464-3075",
+    "City": "Fowlerville",
+    "Country": "Colombia",
+    "FirstName": "Dawson",
+    "LastName": "Hebert",
+    "Ssn": "1234132413",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/67.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 7,
+        "BillId": 7,
+        "DoctorCharge": 106.0881,
+        "MedicineCharge": 52.6439,
+        "RoomCharge": 455.302,
+        "OperationCharge": 412.2381,
+        "NursingCharge": 684.9357,
+        "LabCharge": 977.6641,
+        "TotalCharge": 715.2481,
+        "Comment": "United Health Group",
+        "Bill": 438.8919
+      }
+    ],
+    "Test": [
+      {
+        "Id": 7,
+        "TestId": 7,
+        "TestDescription": "Lipid Panel",
+        "LabScientistId": 7,
+        "DoctorId": 7,
+        "PrescriptionTime": "2019-12-18",
+        "TestTime": "2020-05-05"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 7,
+        "TestId": 7,
+        "NurseId": 7,
+        "BloodPressure": "123/66",
+        "HeartBeat": "18.2532",
+        "SugarLevel": "813.5238",
+        "Height": "59.6152",
+        "Weight": "144.2981",
+        "Time": "2019-04-23",
+        "Bill": 55.55
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 7,
+        "Name": "Metoprolol Succinate",
+        "Price": 238.4111,
+        "Dosage": 180.9081,
+        "DoctorsId": 7,
+        "PharmacistId": 7,
+        "Recommendation": "q. 12 hours everyday"
+      }
+    ]
+  },
+  {
+    "UserName": "Rowland",
+    "DateOfBirth": "1993-06-14",
+    "UserType": "Patient",
+    "Email": "rowlandhebert@plexia.com",
+    "Gender": "male",
+    "Phone": "+1 (877) 519-3647",
+    "City": "Hobucken",
+    "Country": "Nigeria",
+    "FirstName": "Marian",
+    "LastName": "Workman",
+    "Ssn": "<ReferenceError: Can't find variable: number>",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/53.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 8,
+        "BillId": 8,
+        "DoctorCharge": 406.9926,
+        "MedicineCharge": 121.7604,
+        "RoomCharge": 771.2099,
+        "OperationCharge": 390.0625,
+        "NursingCharge": 460.1171,
+        "LabCharge": 961.4125,
+        "TotalCharge": 725.4936,
+        "Comment": "UnitedHealth Group",
+        "Bill": 596.2219
+      }
+    ],
+    "Test": [
+      {
+        "Id": 8,
+        "TestId": 8,
+        "TestDescription": "Electrocardiogram",
+        "LabScientistId": 8,
+        "DoctorId": 8,
+        "PrescriptionTime": "2019-04-13",
+        "TestTime": "2019-03-02"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 8,
+        "TestId": 8,
+        "NurseId": 8,
+        "BloodPressure": "151/92",
+        "HeartBeat": "496.9",
+        "SugarLevel": "354.0972",
+        "Height": "556.3486",
+        "Weight": "140.9215",
+        "Time": "2019-10-15",
+        "Bill": 55.55
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 8,
+        "Name": "Ventolin",
+        "Price": 350.3422,
+        "Dosage": 130.039,
+        "DoctorsId": 9,
+        "PharmacistId": 9,
+        "Recommendation": "q.s. after meals"
+      }
+    ]
+  },
+  {
+    "UserName": "Mcgee",
+    "DateOfBirth": "1953-04-28",
+    "UserType": "Patient",
+    "Email": "mcgeeworkman@plexia.com",
+    "Gender": "male",
+    "Phone": "+1 (997) 403-2001",
+    "City": "Belfair",
+    "Country": "Bouvet Island",
+    "FirstName": "Shirley",
+    "LastName": "Kane",
+    "Ssn": "<ReferenceError: Can't find variable: number>",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/82.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 9,
+        "BillId": 9,
+        "DoctorCharge": 761.898,
+        "MedicineCharge": 910.3066,
+        "RoomCharge": 219.5442,
+        "OperationCharge": 991.9322,
+        "NursingCharge": 685.0753,
+        "LabCharge": 318.0569,
+        "TotalCharge": 145.7006,
+        "Comment": "Molina Healthcare",
+        "Bill": 726.7642
+      }
+    ],
+    "Test": [
+      {
+        "Id": 9,
+        "TestId": 9,
+        "TestDescription": "Electroencephalogram",
+        "LabScientistId": 9,
+        "DoctorId": 9,
+        "PrescriptionTime": "2020-05-22",
+        "TestTime": "2020-04-27"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 9,
+        "TestId": 9,
+        "NurseId": 9,
+        "BloodPressure": "149/75",
+        "HeartBeat": "581.6557",
+        "SugarLevel": "697.9442",
+        "Height": "30.6718",
+        "Weight": "736.8034",
+        "Time": "2019-03-08",
+        "Bill": 55.55
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 9,
+        "Name": "Azithromycin",
+        "Price": 284.0897,
+        "Dosage": 446.2072,
+        "DoctorsId": 9,
+        "PharmacistId": 9,
+        "Recommendation": "q.1-2 days"
+      }
+    ]
+  },
+  {
+    "UserName": "Mcfadden",
+    "DateOfBirth": "1987-04-22",
+    "UserType": "Patient",
+    "Email": "mcfaddenkane@plexia.com",
+    "Gender": "male",
+    "Phone": "+1 (803) 436-2106",
+    "City": "Bascom",
+    "Country": "Vanuatu",
+    "FirstName": "Chan",
+    "LastName": "Mcneil",
+    "Ssn": "<ReferenceError: Can't find variable: number>",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/79.jpg",
+        "IsMain": true
+      }
+    ],
+    "Billing": [
+      {
+        "Id": 10,
+        "BillId": 10,
+        "DoctorCharge": 572.0432,
+        "MedicineCharge": 826.1712,
+        "RoomCharge": 274.0968,
+        "OperationCharge": 737.8387,
+        "NursingCharge": 594.0513,
+        "LabCharge": 198.5951,
+        "TotalCharge": 952.0236,
+        "Comment": "UnitedHealth Group",
+        "Bill": 778.6198
+      }
+    ],
+    "Test": [
+      {
+        "Id": 10,
+        "TestId": 10,
+        "TestDescription": "Gastroscopy",
+        "LabScientistId": 10,
+        "DoctorId": 10,
+        "PrescriptionTime": "2019-11-12",
+        "TestTime": "2019-05-21"
+      }
+    ],
+    "Triage": [
+      {
+        "Id": 10,
+        "TestId": 10,
+        "NurseId": 10,
+        "BloodPressure": "122/69",
+        "HeartBeat": "798.0785",
+        "SugarLevel": "767.822",
+        "Height": "48.3128",
+        "Weight": "144.4997",
+        "Time": "2019-11-14",
+        "Bill": 55
+      }
+    ],
+    "Medication": [
+      {
+        "Id": 10,
+        "Name": "Suprep Bowel Prep Kit",
+        "Price": 304.4719,
+        "Dosage": 206.6001,
+        "DoctorsId": 10,
+        "PharmacistId": 10,
+        "Recommendation": "p.r.n"
+      }
+    ]
+  },
+  {
+    "UserName": "Cara",
+    "DateOfBirth": "1994-07-14",
+    "UserType": "Physician",
+    "Email": "cara@vortexaco.com",
+    "Gender": "female",
+    "Phone": "+1 (828) 507-3155",
+    "City": "London",
+    "Country": "Equatorial Guinea",
+    "FirstName": "Fala",
+    "LastName": "King",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/45.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Sean",
+    "DateOfBirth": "1995-05-08",
+    "UserType": "Clinician",
+    "Email": "durante.merrie@gmail.com",
+    "Gender": "male",
+    "Phone": "+1 (227) 501-3235",
+    "City": "Chaguanas",
+    "Country": "Cook Islands",
+    "FirstName": "Merrie",
+    "LastName": "Durante",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/55.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Patricia",
+    "DateOfBirth": "1994-01-31",
+    "UserType": "Clinician",
+    "Email": "Dulcinea.Birdella@gmail.com",
+    "Gender": "male",
+    "Phone": "+1 (432) 124-3324",
+    "City": "Bamako",
+    "Country": "Cuba",
+    "FirstName": "Cristabel",
+    "LastName": "Pierette",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/76.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Fayre",
+    "DateOfBirth": "1982-06-04",
+    "UserType": "Accounts",
+    "Email": "Louella.Hoban@gmail.com",
+    "Gender": "female",
+    "Phone": "+1 (712) 122-3155",
+    "City": "Mendoza",
+    "Country": "Armenia",
+    "FirstName": "Elmira",
+    "LastName": "Serilda",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/84.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Merci",
+    "DateOfBirth": "1989-10-15",
+    "UserType": "Administration",
+    "Email": "Ekaterina.Fennessy@gmail.com",
+    "Gender": "female",
+    "Phone": "+1 (212) 507-3213",
+    "City": "Palikir",
+    "Country": "China",
+    "FirstName": "Natka",
+    "LastName": "Ellord",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/82.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Lilith",
+    "DateOfBirth": "1980-05-06",
+    "UserType": "Physician",
+    "Email": "Aubrie.Rossner@gmail.com",
+    "Gender": "female",
+    "Phone": "+1 (231) 982-1235",
+    "City": "Nakhon Ratchasima",
+    "Country": "Western Sahara",
+    "FirstName": "Tani",
+    "LastName": "Sadowski",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/55.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Carolina",
+    "DateOfBirth": "1987-09-27",
+    "UserType": "Accounts",
+    "Email": "Tami.Isidore@gmail.com",
+    "Gender": "male",
+    "Phone": "+1 (812) 537-2344",
+    "City": "Juneau",
+    "Country": "Thailand",
+    "FirstName": "Florencia",
+    "LastName": "Fairweather",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men/55.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Atlanta",
+    "DateOfBirth": "1983-08-30",
+    "UserType": "Physician",
+    "Email": "Bill.Liebermann@gmail.com",
+    "Gender": "female",
+    "Phone": "+1 (551) 223-2341",
+    "City": "Barcelona",
+    "Country": "Kiribati",
+    "FirstName": "Carolina",
+    "LastName": "Tamsky",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/89.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Rubie",
+    "DateOfBirth": "1983-12-28",
+    "UserType": "Clinician",
+    "Email": "Elora.Delila@gmail.com",
+    "Gender": "female",
+    "Phone": "+1 (231) 142-1255",
+    "City": "Bishkek",
+    "Country": "Saint Kitts and Nevis",
+    "FirstName": "Riannon",
+    "LastName": "Carlson",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/96.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Tamqrah",
+    "DateOfBirth": "1987-12-22",
+    "UserType": "Receptionist",
+    "Email": "Hope.Nicoline@gmail.com",
+    "Gender": "female",
+    "Phone": "+1 (828) 142-3211",
+    "City": "Linz",
+    "Country": "Gabon",
+    "FirstName": "Zia",
+    "LastName": "Saree",
+    "Photo": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women/87.jpg",
+        "IsMain": true
+      }
+    ]
+  }
+]
