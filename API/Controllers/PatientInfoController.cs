@@ -41,6 +41,8 @@ public class PatientInfoController : BaseApiController
     private readonly IMapper _mapper;
     private readonly IPatientDataRepository _patientDataRepository;
 
+    //Constructor for the patient info controller 
+    //Instantiates an object for the patient data repository and mapper
     public PatientInfoController(IPatientDataRepository patientDataRepository, IMapper mapper)
     {
         _patientDataRepository = patientDataRepository;
@@ -118,12 +120,16 @@ public class PatientInfoController : BaseApiController
     [HttpPut("edit/{username}")]
     public async Task<ActionResult> UpdateUser(TriageInfoUpdateDTO triageInfoUpdateDTO, string username)
     {
+        //Triage information of the said uer 
         var triage = await _patientDataRepository.GetTriageInfoByUsername(username);
 
+        //Maps the triage update dto with triage
         _mapper.Map(triageInfoUpdateDTO, triage);
-
+        //Updates the triage info according to the parameter received from the api 
         _patientDataRepository.UpdateTriage(triage);
 
+            //Rtunrs no content if success 
+        // And returns bad request if failed to update 
         if (await _patientDataRepository.SaveAllAsync()) return NoContent();
 
         return BadRequest("Failed to update triage");

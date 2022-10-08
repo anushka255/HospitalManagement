@@ -7,12 +7,41 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Data;
 
+/*
+NAME
+
+    Patient Data Repository - gets and sets data of patients 
+    
+SYNOPSIS
+    
+    public void UpdateBilling(BillingInfo billing)
+    public void UpdateMedication(MedicationInfo medication)
+    public void UpdateTest(TestInfo test)
+    public void UpdateTriage(TriageInfo triage)
+    public async Task<bool> SaveAllAsync()
+    ##SET METHODS
+     
+     public async Task<IEnumerable<AppointmentDTO>> GetUserAppointments(string predicate, int userId)
+    
+    ##GET METHOD
+     public async Task<Appointment> GetUserAppointment(int sourceUserId, int askedUserId)
+     public async Task<AppUser> GetUserWithAppointments(int userId)
+     
+DESCRIPTION
+    
+    This repository has the functionality to get and set appointment of the users. The set functions sends a request to reciepient user
+    and the get function allows you to see who sent a request 
+    
+*/
+
 public class PatientDataRepository : IPatientDataRepository
 {
     private readonly DataContext _context;
     private readonly IMapper _mapper;
-    private IPatientDataRepository _patientDataRepositoryImplementation;
 
+    
+        //Constructor of the patient data repository
+        //Instantiates the objects from datacontext and imapper class
     public PatientDataRepository(DataContext context, IMapper mapper)
     {
         _context = context;
@@ -54,6 +83,7 @@ public class PatientDataRepository : IPatientDataRepository
     }
 
 
+    //Function to get the billing information
     public async Task<IEnumerable<BillingInfoDTO>> GetBillingAsync()
     {
         return await _context.Users
@@ -61,6 +91,7 @@ public class PatientDataRepository : IPatientDataRepository
             .ToListAsync();
     }
 
+    //Function to get the medication information
     public async Task<IEnumerable<MedicationInfoDTO>> GetMedicationAsync()
     {
         return await _context.Users
@@ -68,6 +99,7 @@ public class PatientDataRepository : IPatientDataRepository
             .ToListAsync();
     }
 
+    //Function to get the test 
     public async Task<IEnumerable<TestInfoDTO>> GetTestAsync()
     {
         return await _context.Users
@@ -75,6 +107,7 @@ public class PatientDataRepository : IPatientDataRepository
             .ToListAsync();
     }
 
+    //Function to get triage information
     public async Task<IEnumerable<TriageInfoDTO>> GetTriageAsync()
     {
         return await _context.Users
@@ -82,6 +115,7 @@ public class PatientDataRepository : IPatientDataRepository
             .ToListAsync();
     }
 
+    
     public async Task<BillingInfoDTO> GetBillingInfoAsync(int Id)
     {
         return await _context.Billing

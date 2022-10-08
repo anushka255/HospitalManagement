@@ -7,6 +7,28 @@ using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Data;
+/*
+NAME
+
+    Account Controllers - has methods to login and register
+
+SYNOPSIS
+    
+    ##SET METHODS
+      public async Task<ActionResult<UserDTO>> Login(LoginDTO loginDto)
+      public async Task<ActionResult<UserDTO>> Register(RegisterDTO registerDto)
+    
+    ##GET METHOD
+    private async Task<bool> UserExists(string username)
+
+DESCRIPTION
+    
+    This is an api, the endpoint of which provides login and registration feature to the users. This class 
+    consists of functions that enable registration and login. There is also an additional function that 
+    that checks if the username exists for registration purpose.
+    
+*/
+
 
 public class UserRepository : IUserRepository
 {
